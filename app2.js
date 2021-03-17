@@ -11,14 +11,8 @@ const server =
 
       res.write('<html> <head> <title> Served </title> </head>')
       res.write('<body>')
-      res.write('Content \n')
-      res.write('More content \n')
-      res.write('Hello World')    
+      res.write('<table border = "2"> <tr> <th>Location</th> <th>Spending Hours</th> <th>Expenditure</th> </tr> <tr> <td>The Lincoln Memorial</td> <td>4</td> <td>$200</td> </tr> <tr> <td>National Mall and Veterans Memorials</td> <td>6</td> <td>$150</td> </tr> <tr> <td>National Air and Space Museum</td> <td>3</td> <td>$300</td> </tr> <tr> <td>National Zoological Park</td> <td>7</td> <td>$250</td> </tr> </table>')  
       res.end('</body></html>')
       //Close the response
     }                           
 )
-
-server.listen(port, hostname, () => {   //Start the server
-  console.log(`Server running at http://${hostname}:${port}/`)  //Log the request
-})
